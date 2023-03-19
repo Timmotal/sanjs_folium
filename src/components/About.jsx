@@ -7,9 +7,9 @@ import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, title, icon, info }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="w-10/12 mx-auto">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -20,10 +20,11 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450
           }} 
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-center items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-primary text-[20px] font-bold text-center py-2">{title}</h3>
+          <div>{info}</div>
         </div>
       </motion.div>
       </Tilt>
@@ -32,16 +33,26 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-    <motion.div>
-      <p className={styles.sectionSubText}>Introduction</p>
-      <h2 className={styles.sectionHeadText}>Overview.</h2>
+    <motion.div
+      variants={textVariant()} 
+      className='mx-auto mt-10'>
+      <p className={styles.sectionSubText}>Who is Timmortal?</p>
+      <h2 className={styles.sectionHeadText}>About.</h2>
     </motion.div>
 
     <motion.p
       variants={fadeIn("", "", 0.1, 1)}
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
     >
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ducimus qui eum eaque. Autem nostrum, nemo eveniet in deserunt accusantium dolore ipsam iure voluptatem accusamus suscipit porro, consectetur dolorum ipsa ea corporis error. Recusandae porro cupiditate id amet dicta error reiciendis tenetur velit repellendus. Ab magni maxime delectus amet praesentium. Dolorum iste, molestias architecto reiciendis doloribus quam provident amet quas?
+     A curiosity-driven Front-End Dev, excited to delve into the unknown. I think Front-End Development can be functional and charming
+    </motion.p>
+
+    <motion.p
+      variants={fadeIn("", "", 0.1, 1)}
+      className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+    >
+     Aiming to be a Digital Renaissance Person. I am constantly surfing for the bests
+      tools in the world of technology to help develop ideas into live web apps
     </motion.p>
 
     <div className="mt-20 flex flex-wrap gap-10">
@@ -57,4 +68,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, "about"); 

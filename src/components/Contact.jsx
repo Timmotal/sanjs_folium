@@ -58,7 +58,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-0 overflow-hidden">
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -80,7 +80,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="call me by your name"
+              placeholder="Name"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg outlined-none border-none font-medium' 
             />
           </label>
@@ -93,7 +93,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="call me by your email"
+              placeholder="Email"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg outlined-none border-none font-medium' 
             />
           </label>
@@ -106,7 +106,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="call me by your message"
+              placeholder="Your message goes here..."
               className='bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg outlined-none border-none font-medium' 
             />
           </label>

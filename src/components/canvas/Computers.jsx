@@ -21,9 +21,11 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75} //we check if isMobile and then reduce the size of the model to this scale
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]} // for smooth rotation
+        scale={isMobile ? 0.4 : 0.75} //we check if isMobile and then reduce the size of the model to this scale
+        position={isMobile ? [1, -3, -0.75] : [0, -3.25, -1.5]}
+        rotation={isMobile ? [-0.01, -5.75, -0.1] : [-0.01, -0.75, -0.1]} // for smooth rotation
+        // {[the x origin elevation, the side view angle, the tilt, the frontal angle of view]}
+        // 
       />
     </mesh>
   );
@@ -57,6 +59,7 @@ const ComputersCanvas = () => {
   return (
     // we are loading the object onto our react three fiber canvas
     <Canvas
+      className={`${isMobile} ? " mt-[-250px]": " ml-auto" `}
       frameloop='demand'
       shadows
       dpr={[1, 2]}

@@ -8,9 +8,9 @@ const SectionWrapper = (Component, idName) =>
     function HOC() {
         return (  
             <motion.section
-                variants={staggerContainer()}// but we didn't call it as a function with EdRoh
-                initial="hidden"
-                whileInView="show"
+                variants={staggerContainer()}
+                initial='hidden'
+                whileInView='show'
                 viewport={{ once: true, amount: 0.25 }}
                 className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
             >

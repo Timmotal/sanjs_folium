@@ -3,7 +3,12 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import TimLight from "./TimLight.png"
 import github from "./github.png";
+import linkedin from "./linkedin.png";
+import twitter from "./twitter.png";
+import githubSocial from "./githubSocial.png";
+import webpage from "./webpage.png"
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -20,15 +25,24 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.png";
+import api from "./tech/api.png";
+import github2 from "./tech/github2.png";
+import payment from "./tech/payment.png";
+import onlineshop from "./tech/onlineshop.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import project1 from "./project-1.png";
+import project2 from "./project-2.png";
+import project3 from "./project-3.png";
+import project4 from "./project-4.png";
+import project5 from "./project-5.png";
+import project6 from "./project-6.png";
+import project7 from "./project-7.png";
 
 export {
   logo,
@@ -37,6 +51,7 @@ export {
   mobile,
   web,
   github,
+  webpage,
   menu,
   close,
   css,
@@ -56,7 +71,20 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  nextjs,
+  api,
+  payment,
+  onlineshop,
+  github2,
+  linkedin,
+  githubSocial,
+  twitter,
+  TimLight,
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
+  project6,
+  project7,
 };

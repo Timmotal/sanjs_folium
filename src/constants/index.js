@@ -19,20 +19,29 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    nextjs,
+    api,
+    payment,
+    github2,
+    onlineshop,
+    project1,
+    project2,
+    project3,
+    project4,
+    project5,
+    project6,
+    project7,
   } from "../assets";
   
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      id: "work",
+      title: "Crafts",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "about",
+      title: "About",
     },
     {
       id: "contact",
@@ -42,24 +51,36 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "User-Experience",
       icon: web,
+      info: "Developing Web Apps that runs across devices & platforms & delivering a seamless experience for all users."
     },
     {
-      title: "React Native Developer",
+      title: "Value",
       icon: mobile,
+      info: "Passionate about building superb software. Integrating modern languages & frameworks to help deliver value and enrich lives."
     },
     {
-      title: "Backend Developer",
+      title: "Simple",
       icon: backend,
+      info: "Enjoy bringing ideas to life in browsers. Leveraging the powers of Javascript and other technologies to develop friendly & simple UI."
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+
   ];
   
   const technologies = [
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Next JS",
+      icon: nextjs,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -69,16 +90,8 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
       name: "TypeScript",
       icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
     },
     {
       name: "Redux Toolkit",
@@ -89,16 +102,12 @@ import {
       icon: tailwind,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "payment",
+      icon: payment,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
+      name: "api",
+      icon: api,
     },
     {
       name: "git",
@@ -109,9 +118,9 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
-    },
+      name: "github2",
+      icon: github2,
+    }
   ];
   
   const experiences = [
@@ -196,69 +205,169 @@ import {
     },
   ];
   
+// <-------------------------------------------------PROJECTS-CONSTANTS----------------------------------------------->
   const projects = [
     {
-      name: "Car Rent",
+      name: "MERN App: Expelimus AI Image Generator",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "AI Image Generation App, where your imagination is the limit to what can be created, it uses Open AI API to instantly fetch your prompts in real-time",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Reactjs",
+          color: "text-brickOrange",
         },
         {
           name: "mongodb",
-          color: "green-text-gradient",
+          color: "text-charchoal",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "tailwindcss",
+          color: "text-brightPink",
+        },
+        {
+          name: "nodejs",
+          color: "text-butter",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: project1,
+      source_code_link: "https://expelimus.vercel.app",
+      github_repo: "https://github.com/Timmotal/Expelimus",
     },
     {
-      name: "Job IT",
+      name: "Graphêvilla",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Graphevilla is where users share images and discuss what the images inspires in them with other people who share same interests",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "reactjs",
+          color: "text-brickOrange",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
+          name: "sanitydb",
+          color: "text-charchoal",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "tailwindcss",
+          color: "text-brightPink",
+        },
+        {
+          name: "google-auth",
+          color: "text-butter",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: project2,
+      source_code_link: "https://graphevilla.netlify.app/",
+      github_repo: "https://github.com/Timmotal/GrapheVIlla",
     },
     {
-      name: "Trip Guide",
+      name: "Petsu E-Commerce Store",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Petsu is where users make their clothings shopping, with credit card implementation, using Strapi headless CMS to manage the inventory",
+      tags: [
+        {
+          name: "Reactjs",
+          color: "text-brickOrange",
+        },
+        {
+          name: "sasscss",
+          color: "text-charchoal",
+        },
+        {
+          name: "online-payment",
+          color: "text-brightPink",
+        },
+      ],
+      image: project3,
+      source_code_link: "https://petsu.netlify.app/",
+      github_repo: "https://github.com/Timmotal/Petsu_Store",
+    },
+    {
+      name: "Marsverse",
+      description:
+        "A concept application for exploring mars via virtual reality",
       tags: [
         {
           name: "nextjs",
-          color: "blue-text-gradient",
+          color: "text-brickOrange",
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
+          name: "figma",
+          color: "text-charchoal",
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "tailwindcss",
+          color: "text-brightPink",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: project4,
+      source_code_link: "https://marsverse-timmortal.vercel.app/",
+      github_repo: "https://github.com/Timmotal/Marsverse",
+    },
+    {
+      name: "Mogymn",
+      description:
+        "A gymnasium membership app, users register and login to their profile for current programs",
+      tags: [
+        {
+          name: "Typescript",
+          color: "text-brickOrange",
+        },
+        {
+          name: "framermotion",
+          color: "text-charchoal",
+        },
+        {
+          name: "tailwindcss",
+          color: "text-brightPink",
+        },
+      ],
+      image: project5,
+      source_code_link: "https://mogymn.vercel.app/",
+      github_repo: "https://github.com/Timmotal/mogymn",
+    },
+    {
+      name: "Ridym Music App",
+      description:
+        "A music application using Shazam API, users listen and checkout the top Shazamed songs in the world",
+      tags: [
+        {
+          name: "reactjs",
+          color: "text-brickOrange",
+        },
+        {
+          name: "tailwindcss",
+          color: "text-charchoal",
+        },
+        {
+          name: "axios",
+          color: "text-brightPink",
+        },
+      ],
+      image: project6,
+      source_code_link: "https://ridym.vercel.app/",
+      github_repo: "https://github.com/Timmotal/ridym",
+    },
+    {
+      name: "Meta 2.0 Chat App",
+      description:
+        "Meta 2.0 clone, chat application using the Next JS 13, with realtime message updates",
+      tags: [
+        {
+          name: "nextjs",
+          color: "text-brickOrange",
+        },
+        {
+          name: "redisdb",
+          color: "text-charchoal",
+        },
+        {
+          name: "tailwindcss",
+          color: "text-brightPink",
+        },
+      ],
+      image: project7,
+      source_code_link: "https://github.com/Timmotal",
+      github_repo: "https://github.com/Timmotal",
     },
   ];
   

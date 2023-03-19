@@ -34,11 +34,11 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #72adda;
+  background: linear-gradient(-90deg, #72adda 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #72adda 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
@@ -202,3 +202,42 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+/* Landing Button */
+.astyle4 {
+  position:relative;
+  text-decoration:none;
+  color:white;
+  font-weight:normal;
+  padding: 7px 12.5px;
+  display:inline-flex;
+  align-items:center;
+  background-color:none;
+  border: 3px #5ea0d4 solid;
+  overflow:hidden;
+  z-index:2;
+}
+.astyle4::before {
+    content:"";
+    display:block;
+    position:absolute;
+    height:100%;
+    left:-105%;
+    width:100%;
+    bottom:0;
+    background-color: #5ea0d4;
+    z-index:-1;
+    transition: left .3s ease;
+    transform:skewX(20deg);
+  }
+  .astyle4:hover::before {
+       left:-20%; 
+  }
+  /* Background Blur For Nav */
+  .transbox {
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    font-weight: bold;
+  }
+
