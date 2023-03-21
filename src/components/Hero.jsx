@@ -26,7 +26,7 @@ const Hero = () => {
               <div className="">
               <a
                 href="#contact"
-                className="astyle4 cursor-pointer px-10 text-lg mt-5 z-"
+                className="astyle4 cursor-pointer px-10 text-lg mt-5 z-" 
               >
                 Contact Me
               </a>
