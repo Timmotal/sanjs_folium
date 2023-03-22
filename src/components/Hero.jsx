@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl md:ml-[-20px] mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className='w-5 h-5 rounded-full bg-[#5ea0d4]' />
@@ -34,10 +34,20 @@ const Hero = () => {
               <SocialMediaIcons />
               </div>
               </div>
+              <div>
+              <p className='pt-8 '>
+              short on time? <br/> See a <br/>
+                <span className='square relative z-10'>
+                <a className='underline before after hover:no-underline' href="https://portafoglio.vercel.app/">
+                   Non 3D Portfolio
+                </a>
+                   </span>
+                 </p>
+              </div>
           </div>
         </div>
 
-        <ComputersCanvas />
+        {/* <ComputersCanvas /> */}
         {/* <div className='flex lg:hidden justify-center items-center z-10 relative'>
               <SocialMediaIcons />
         </div> */}

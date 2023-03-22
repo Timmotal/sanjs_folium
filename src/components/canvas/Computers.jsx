@@ -59,7 +59,7 @@ const ComputersCanvas = () => {
   return (
     // we are loading the object onto our react three fiber canvas
     <Canvas
-      className={`${isMobile} ? " mt-[-250px]": " ml-auto" `}
+      className={isMobile ?  'hidden' : ''}
       frameloop='demand'
       shadows
       dpr={[1, 2]}
@@ -73,7 +73,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2} // to have a fixed axis/angle of view
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={isMobile} cl />
       </Suspense>
 
       <Preload all />
