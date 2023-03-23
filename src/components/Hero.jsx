@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl md:ml-[-20px] mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] md:top-[70px] lg:top-[120px] max-w-7xl md:ml-[-30px] mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className='w-5 h-5 rounded-full bg-[#5ea0d4]' />
@@ -35,7 +35,7 @@ const Hero = () => {
               </div>
               </div>
               <div>
-              <p className='pt-8 '>
+              <p className='pt-8 md:pt-5 lg:pt-8 relative z-10'>
               Short on time? <br/>
                 <span className='square relative z-10'>
                 <a className='underline before after hover:no-underline' href="https://portafoglio.vercel.app/">
