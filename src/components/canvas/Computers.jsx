@@ -59,7 +59,7 @@ const ComputersCanvas = () => {
   return (
     // we are loading the object onto our react three fiber canvas
     <Canvas
-      className={isMobile ?  'hidden' : ''}
+      // className={isMobile ?  'hidden' : ''}
       frameloop='demand'
       shadows
       dpr={[1, 2]}
