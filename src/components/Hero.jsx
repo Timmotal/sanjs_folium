@@ -36,10 +36,10 @@ const Hero = () => {
               </div>
               <div>
               <p className='pt-8 '>
-              Short on time? <br/> See a <br/>
+              Short on time? <br/>
                 <span className='square relative z-10'>
                 <a className='underline before after hover:no-underline' href="https://portafoglio.vercel.app/">
-                   Non 3D Portfolio
+                   See None 3D Portfolio
                 </a>
                    </span>
                  </p>
