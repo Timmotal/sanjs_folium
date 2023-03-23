@@ -47,7 +47,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* <ComputersCanvas /> */}
+        <ComputersCanvas />
         {/* <div className='flex lg:hidden justify-center items-center z-10 relative'>
               <SocialMediaIcons />
         </div> */}
