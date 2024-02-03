@@ -303,28 +303,28 @@ import {
     //   source_code_link: "https://marsverse-timmortal.vercel.app/",
     //   github_repo: "https://github.com/Timmotal/Marsverse",
     // },
-    {
-      name: "Mogymn",
-      description:
-        "A gymnasium membership app, users register and login to their profile for current programs",
-      tags: [
-        {
-          name: "Typescript",
-          color: "text-brickOrange",
-        },
-        {
-          name: "framermotion",
-          color: "text-charchoal",
-        },
-        {
-          name: "tailwindcss",
-          color: "text-brightPink",
-        },
-      ],
-      image: project5,
-      source_code_link: "https://mogymn.vercel.app/",
-      github_repo: "https://github.com/Timmotal/mogymn",
-    },
+    // {
+    //   name: "Mogymn",
+    //   description:
+    //     "A gymnasium membership app, users register and login to their profile for current programs",
+    //   tags: [
+    //     {
+    //       name: "Typescript",
+    //       color: "text-brickOrange",
+    //     },
+    //     {
+    //       name: "framermotion",
+    //       color: "text-charchoal",
+    //     },
+    //     {
+    //       name: "tailwindcss",
+    //       color: "text-brightPink",
+    //     },
+    //   ],
+    //   image: project5,
+    //   source_code_link: "https://mogymn.vercel.app/",
+    //   github_repo: "https://github.com/Timmotal/mogymn",
+    // },
     {
       name: "Ridym Music App",
       description:
