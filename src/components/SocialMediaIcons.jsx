@@ -9,7 +9,7 @@ const SocialMediaIcons = () => {
             target='_blank'
             rel="noreferrer"
         >
-            <img src={linkedin} alt="linkedin-link" className='w-[34px]' />
+            <img src={linkedin} alt="linkedin-link" className='w-[34px]'git  />
         </a>
         <a 
             href="https://twitter.com/TimmortalOla" 

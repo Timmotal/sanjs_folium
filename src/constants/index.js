@@ -281,28 +281,28 @@ import {
       source_code_link: "https://petsu.netlify.app/",
       github_repo: "https://github.com/Timmotal/Petsu_Store",
     },
-    {
-      name: "Marsverse",
-      description:
-        "A concept application for exploring mars via virtual reality",
-      tags: [
-        {
-          name: "nextjs",
-          color: "text-brickOrange",
-        },
-        {
-          name: "figma",
-          color: "text-charchoal",
-        },
-        {
-          name: "tailwindcss",
-          color: "text-brightPink",
-        },
-      ],
-      image: project4,
-      source_code_link: "https://marsverse-timmortal.vercel.app/",
-      github_repo: "https://github.com/Timmotal/Marsverse",
-    },
+    // {
+    //   name: "Marsverse",
+    //   description:
+    //     "A concept application for exploring mars via virtual reality",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "text-brickOrange",
+    //     },
+    //     {
+    //       name: "figma",
+    //       color: "text-charchoal",
+    //     },
+    //     {
+    //       name: "tailwindcss",
+    //       color: "text-brightPink",
+    //     },
+    //   ],
+    //   image: project4,
+    //   source_code_link: "https://marsverse-timmortal.vercel.app/",
+    //   github_repo: "https://github.com/Timmotal/Marsverse",
+    // },
     {
       name: "Mogymn",
       description:
